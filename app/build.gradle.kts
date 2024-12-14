@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "lk.nibm.ku.hdse233f.quizapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "lk.nibm.ku.hdse233f.quizapp"
@@ -33,10 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
